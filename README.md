@@ -28,8 +28,7 @@ This project implements a **DDoS Attack Detection System** using **Logistic Regr
 
 ### **🔹 Step 1: Clone the Repository**  
 ```bash
-git clone https://github.com/HassanCodes/DDoS-Detection.git
-cd DDoS-Detection
+git clone https://github.com/HassanCodesit/DDOS-attack-detection-using-logistic-regression
 ```
 
 ### **🔹 Step 2: Install Dependencies**  
