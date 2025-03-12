@@ -58,39 +58,7 @@ You can also run this project directly on **Google Colab**:
 
 ---
 
-## 📊 **Usage Example: Predicting DDoS Attacks**  
-```python
-import joblib
-import pandas as pd
 
-# Load trained model
-model = joblib.load("ddos_logistic_regression.pkl")
-
-# Sample input data (replace with real values)
-sample_data = {
-    "pktcount": 50,
-    "bytecount": 1500,
-    "dur": 25,
-    "tot_kbps": 300,
-    "port_no": 443,
-    "pktrate": 20,
-    "flows": 75,
-    "packetins": 10,
-    "Protocol_TCP": 1,
-    "Protocol_UDP": 0,
-    "Protocol_ICMP": 0,
-}
-
-# Convert to DataFrame
-df_sample = pd.DataFrame([sample_data])
-
-# Make prediction
-predicted_label = model.predict(df_sample)[0]
-label_map = {0: "✅ Normal Traffic", 1: "🚨 DDoS Attack Detected!"}
-print("🚦 Prediction:", label_map[predicted_label])
-```
-
----
 
 
 ---
