@@ -1,14 +1,4 @@
-# DDOS-attack-detection-using-logistic-regression
 
-
-
-1️⃣ **README.md** (Project description)  
-2️⃣ **ddos_logistic_regression.pkl** (Trained ML model)  
-3️⃣ **ddos_attack_detection_using_logistic_regression.py** (Python script for detection)  
-
-Here’s a **clean and minimal GitHub README** specifically for your project setup.  
-
----
 
 # **🚀 DDoS Attack Detection Using Logistic Regression**  
 🔍 **A machine learning model to detect DDoS attacks using Logistic Regression.**  
@@ -61,6 +51,13 @@ python ddos_attack_detection_using_logistic_regression.py
 
 ---
 
+## 📊 **Run on Google Colab**  
+You can also run this project directly on **Google Colab**:  
+
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1gygTiLNHlBu1e9sOj2LC8EYtCp8tF6Zb?usp=sharing)  
+
+---
+
 ## 📊 **Usage Example: Predicting DDoS Attacks**  
 ```python
 import joblib
@@ -92,4 +89,13 @@ predicted_label = model.predict(df_sample)[0]
 label_map = {0: "✅ Normal Traffic", 1: "🚨 DDoS Attack Detected!"}
 print("🚦 Prediction:", label_map[predicted_label])
 ```
+
+---
+
+
+---
+
+
+
+---
 
