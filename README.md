@@ -55,8 +55,6 @@ You can also run this project directly on **Google Colab**:
 
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1gygTiLNHlBu1e9sOj2LC8EYtCp8tF6Zb?usp=sharing)  
 
--
-
 
 
 
