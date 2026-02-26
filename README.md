@@ -23,7 +23,8 @@ This project implements a **DDoS Attack Detection System** using **Logistic Regr
 │── 📜 api.py                     # FastAPI backend for DDoS detection
 │── 📜 requirements.txt           # Python dependencies
 │── 📁 static/
-│   └── 📜 index.html             # JavaScript frontend UI
+│   ├── 📜 index.html             # JavaScript frontend UI
+│   └── 📷 screenshot.png         # Web interface screenshot
 ```
 
 ---
@@ -50,6 +51,10 @@ python ddos_attack_detection_using_logistic_regression.py
 ## 🌐 **Web Application (FastAPI + JavaScript)**
 
 This project includes a **FastAPI backend** with a **JavaScript frontend** for easy web-based DDoS detection.
+
+### **📸 Screenshot**
+
+![DDoS Attack Detection Web Interface](static/screenshot.png)
 
 ### **🔹 Start the Web Server**
 ```bash
