@@ -20,6 +20,10 @@ This project implements a **DDoS Attack Detection System** using **Logistic Regr
 │── 📜 README.md                  # Project description (this file)
 │── 📜 ddos_logistic_regression.pkl # Trained model file
 │── 📜 ddos_attack_detection_using_logistic_regression.py # Python script for DDoS detection
+│── 📜 api.py                     # FastAPI backend for DDoS detection
+│── 📜 requirements.txt           # Python dependencies
+│── 📁 static/
+│   └── 📜 index.html             # JavaScript frontend UI
 ```
 
 ---
@@ -39,6 +43,50 @@ pip install -r requirements.txt
 ### **🔹 Step 3: Run the Detection Script**  
 ```bash
 python ddos_attack_detection_using_logistic_regression.py
+```
+
+---
+
+## 🌐 **Web Application (FastAPI + JavaScript)**
+
+This project includes a **FastAPI backend** with a **JavaScript frontend** for easy web-based DDoS detection.
+
+### **🔹 Start the Web Server**
+```bash
+uvicorn api:app --host 0.0.0.0 --port 8000
+```
+
+Then open your browser and navigate to: `http://localhost:8000`
+
+### **🔹 API Endpoints**
+
+| Endpoint | Method | Description |
+|----------|--------|-------------|
+| `/` | GET | Serves the web frontend |
+| `/health` | GET | Health check endpoint |
+| `/predict` | POST | Predict DDoS attack from network traffic data |
+
+### **🔹 Example API Request**
+```bash
+curl -X POST http://localhost:8000/predict \
+  -H "Content-Type: application/json" \
+  -d '{
+    "pktcount": 50000,
+    "bytecount": 5000000,
+    "dur": 1,
+    "flows": 500,
+    "pktrate": 50000,
+    "Protocol_UDP": 1
+  }'
+```
+
+### **🔹 Example Response**
+```json
+{
+  "prediction": 1,
+  "label": "DDoS Attack Detected",
+  "confidence": "100.00%"
+}
 ```
 
 ---
